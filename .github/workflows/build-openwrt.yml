@@ -76,11 +76,15 @@ jobs:
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
 
-    - name: 清除feeds
-      run: cd openwrt && ./scripts/feeds clean
-
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
+   
+    - name: 更新golang
+      run: |
+        cd openwrt
+        pushd feeds/packages/lang
+        rm -fr golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
+        popd
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
