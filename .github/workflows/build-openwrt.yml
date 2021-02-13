@@ -83,7 +83,7 @@ jobs:
       run: |
         cd openwrt
         pushd feeds/packages/lang
-        rm -fr golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
+        sudo rm -rf golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
         popd
 
     - name: Install feeds
