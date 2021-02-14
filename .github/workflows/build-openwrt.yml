@@ -213,10 +213,7 @@ jobs:
         desp: 您的个人定制固件顺利编译完成了！
               
               
-              完成时间：${{ env.date1 }}
+              固件地址：https://github.com/Cccccircle/Lede-Circle/releases
               
               
-              发布地址：${{ env.GITHUB_RELEASE }}
-              
-              
-              ✌️👌✌️☝️👍👍👍请尽快下载固件,愉快的玩耍!🎉🎉🎉🎉🎉🎉
+              ✌️👌✌️☝️👍👍👍请尽快下载固件,完成更新!🎉🎉🎉🎉🎉🎉
