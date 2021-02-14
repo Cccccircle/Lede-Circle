@@ -78,13 +78,6 @@ jobs:
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
-   
-    - name: 更新golang
-      run: |
-        cd openwrt
-        pushd feeds/packages/lang
-        sudo rm -rf golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
-        popd
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
