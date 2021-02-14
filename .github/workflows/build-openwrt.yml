@@ -26,6 +26,7 @@ env:
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
+  SCKEY: ${{ secrets.SCKEY }}
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
@@ -204,7 +205,18 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
-    - name: WeChat notification
-      if: env.SCKEY
-      run: |
-        curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=🎉OpenWrt-lean🎉🎁🎁更新编译完成🎁🎁
+    - name: 微信通知
+      uses: emon100/Action-Serverchan@v2
+      with:
+        SCKEY: ${{ secrets.SCKEY }}
+        text: openwrt固件已经编译完成！
+        desp: 您的个人定制固件顺利编译完成了！
+              
+              
+              完成时间：${{ env.date1 }}
+              
+              
+              发布地址：${{ env.GITHUB_RELEASE }}
+              
+              
+              ✌️👌✌️☝️👍👍👍请尽快下载固件,愉快的玩耍!🎉🎉🎉🎉🎉🎉
