@@ -63,7 +63,7 @@ jobs:
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         cd openwrt
-        sudo rm -rf /package/lean/luci-theme-argon
+        sudo rm -rf package/lean/luci-theme-argon
 
     - name: 创建自定义插件文件夹
       run: |
