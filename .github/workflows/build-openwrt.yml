@@ -40,7 +40,7 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
-    - name: 准备工作完成
+    - name: 准备完成
       uses: actions/checkout@main
 
     - name: 安装配置运行环境
