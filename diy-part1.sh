@@ -15,7 +15,6 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-git clone https://github.com/jerrykuku/luci-app-ttnode.git
 git clone https://github.com/kongfl888/luci-app-adguardhome.git
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 git clone https://github.com/jerrykuku/luci-app-argon-config.git
