@@ -223,16 +223,15 @@ jobs:
         desp: 您的个人定制固件顺利编译完成了！
 
 
-              完成时间：${{ env.FILE_DATE }}
+              完成时间：${{ env.FILE_DATE }}          
               
+              发布地址：
+              https://github.com/Cccccircle/Lede-Circle/releases
               
-              发布地址：https://github.com/Cccccircle/Lede-Circle/releases
+              奶牛快传：
+              ${{ env.COWTRANSFER_URL }}
+                 
+              WeTransfer：
+              ${{ env.WETRANSFER_URL }}
               
-              
-              奶牛快传：${{ env.COWTRANSFER_URL }}
-              
-              
-              WeTransfer：${{ env.WETRANSFER_URL }}
-              
-              
-              ✌️👌✌️☝️👍👍👍请尽快下载固件,完成更新!🎉🎉🎉🎉🎉🎉
+              ✌️👌✌️请尽快下载固件,完成更新!🎉🎉🎉🎉🎉🎉
