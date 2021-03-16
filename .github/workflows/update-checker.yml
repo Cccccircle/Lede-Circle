@@ -21,7 +21,7 @@ on:
     - cron: 0 21 * * *
 
 jobs:
-  Check Update :
+  Check Update:
     runs-on: ubuntu-20.04
     if: github.event.repository.owner.id == github.event.sender.id
 
