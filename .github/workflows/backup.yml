@@ -21,12 +21,15 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-          📢📢📢恭喜个人定制固件顺利编译完成啦!!!📢📢📢
-          完成时间：${{ env.FILE_DATE }}          
-              
+          📢📢📢个人定制固件编译完成啦!!!📢📢📢
+
+          完成时间：${{ env.FILE_DATE }}
+          
+          🚀🚀🚀🚀🚀🚀🚀   
           发布地址：
           https://github.com/Cccccircle/Lede-Circle/releases
-          
+          🚀🚀🚀🚀🚀🚀🚀
+
           👇👇👇👇👇下载请!!!👇👇👇👇👇
     
           奶牛快传：
@@ -35,4 +38,4 @@ jobs:
           WeTransfer：
           🥈🥈🥈${{ env.WETRANSFER_URL }}🥈🥈🥈
               
-          🎁🎁🎁🎁🎁网盘只有7天时效,请及时完成更新!!!🎁🎁🎁🎁
+          🎁🎁🎁网盘7天时效,请及时完成更新!!!🎁🎁🎁
