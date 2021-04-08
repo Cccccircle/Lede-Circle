@@ -32,10 +32,10 @@ jobs:
 
           👇👇👇👇👇下载请!!!👇👇👇👇👇
     
-          奶牛快传:1⃣️
-          ${{ env.COWTRANSFER_URL }}
+          奶牛快传:
+          1⃣️${{ env.COWTRANSFER_URL }}
                  
-          WeTransfer:2⃣️
-          ${{ env.WETRANSFER_URL }}
+          WeTransfer:
+          2⃣️${{ env.WETRANSFER_URL }}
               
           🎁🎁🎁网盘7天时效,请及时完成更新!!!🎁🎁🎁
