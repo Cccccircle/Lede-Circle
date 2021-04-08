@@ -215,44 +215,26 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
-    - name: 微信通知
-      uses: emon100/Action-Serverchan@v2
-      with:
-        SCKEY: ${{ secrets.SCKEY }}
-        text: openwrt固件已经编译完成！
-        desp: 您的个人定制固件顺利编译完成了！
-
-
-              完成时间：${{ env.FILE_DATE }}          
-              
-              发布地址：
-              https://github.com/Cccccircle/Lede-Circle/releases
-              
-              奶牛快传：
-              ${{ env.COWTRANSFER_URL }}
-                 
-              WeTransfer：
-              ${{ env.WETRANSFER_URL }}
-              
-              ✌️👌✌️请尽快下载固件,完成更新!🎉🎉🎉🎉🎉🎉
-
+  
     - name: 发送 Telegram 通知！
       uses: appleboy/telegram-action@master
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-          📢📢📢恭喜个人定制固件顺利编译完成🎊🎊🎊🎊
+          📢📢📢恭喜个人定制固件顺利编译完成啦!!!📢📢📢
 
           完成时间：${{ env.FILE_DATE }}          
               
           发布地址：
           https://github.com/Cccccircle/Lede-Circle/releases
-              
+          
+          👇👇👇👇👇下载请!!!👇👇👇👇👇
+    
           奶牛快传：
-          ${{ env.COWTRANSFER_URL }}
+          🥇🥇🥇${{ env.COWTRANSFER_URL }}🥇🥇🥇
                  
           WeTransfer：
-          ${{ env.WETRANSFER_URL }}
+          🥈🥈🥈${{ env.WETRANSFER_URL }}🥈🥈🥈
               
-          ✌️👌✌️请尽快下载固件,完成更新!🎉🎉🎉🎉🎉🎉
+          🎁🎁🎁🎁🎁网盘只有7天时效,请及时完成更新!!!🎁🎁🎁🎁🎁
