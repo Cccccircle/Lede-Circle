@@ -201,10 +201,12 @@ jobs:
         files: ${{ env.FIRMWARE }}/*
 
     - name: 清理云编译
-      uses: GitRML/delete-workflow-runs@main
+      uses: Mattraks/delete-workflow-runs@main
       with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        repository: ${{ github.repository }}
         retain_days: 1
-        keep_minimum_runs: 3
+        keep_minimum_runs: 1
 
     - name: 清理旧的发布
       uses: dev-drprasad/delete-older-releases@v0.1.0
